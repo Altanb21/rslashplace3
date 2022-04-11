@@ -343,7 +343,7 @@
 			load = true
 		})
 		let online = 1
-		let ws = new WebSocket('wss://server.dogehub.cc:777')
+		let ws = new WebSocket('wss://dogehub.cc:80')
 		ws.onmessage = async function({data}){
 			data = new DataView(await data.arrayBuffer())
 			let code = data.getUint8(0)
